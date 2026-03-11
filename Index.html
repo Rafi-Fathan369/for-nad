@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For Nada  🌸</title>
+  <meta name="description" content="A special message, made with love." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌸</text></svg>" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts (preconnect for speed) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:opsz,wght@9..40,200;9..40,300;9..40,400&family=Playfair+Display:ital,wght@0,400;1,400;1,500&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- ── CURSOR ──────────────────── -->
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <!-- ── LOADING ─────────────────── -->
+  <div class="page-cover">
+    <span class="loader-heart">🌸</span>
+  </div>
+
+  <!-- ── AUDIO BTN ───────────────── -->
+  <button class="audio-btn" title="Toggle music" aria-label="Toggle background music">🔇</button>
+
+  <!-- ── PROGRESS DOTS ───────────── -->
+  <nav class="progress-dots" aria-label="Page navigation">
+    <div class="dot active" onclick="goToPage(0)" title="Opening"></div>
+    <div class="dot" onclick="goToPage(1)" title="Story"></div>
+    <div class="dot" onclick="goToPage(2)" title="Memories"></div>
+    <div class="dot" onclick="goToPage(3)" title="Confession"></div>
+    <div class="dot" onclick="goToPage(4)" title="Accepted"></div>
+  </nav>
+
+  <!-- ══════════════════════════════════ -->
+  <!--  PAGE 0 — OPENING                 -->
+  <!-- ══════════════════════════════════ -->
+  <section id="opening" class="page">
+    <div class="bg-canvas"></div>
+    <canvas class="particles"></canvas>
+
+    <div class="content glass-panel">
+      <p class="eyebrow">A little something for you</p>
+
+      <h1 class="big-title">
+        <span class="name-type" style="font-style:normal; color: var(--text-dark);"></span>
+      </h1>
+
+      <p class="tagline tagline-type" style="min-height: 1.8rem;"></p>
+
+      <div class="ornament">✦</div>
+
+      <div class="anim-4">
+        <button class="btn-primary" onclick="goToPage(1); createAmbientMusic();">
+          Open the story
+          <span>→</span>
+        </button>
+      </div>
+    </div>
+
+    <p class="scroll-hint anim-5">Made with love by Rafi</p>
+  </section>
+
+
+  <!-- ══════════════════════════════════ -->
+  <!--  PAGE 1 — STORY                   -->
+  <!-- ══════════════════════════════════ -->
+  <section id="story" class="page">
+    <div class="bg-canvas"></div>
+    <div class="floating-hearts"></div>
+
+    <div class="content">
+      <p class="eyebrow anim-1">Chapter one</p>
+
+      <h2 class="title-serif anim-2">
+        The day I
+        <span class="title-italic">met you</span>
+      </h2>
+
+      <div class="story-body" style="margin-top: 1.5rem;">
+        <p class="story-para" style="margin-bottom: 1rem;">
+          Meeting you felt like finding a song I had always known<br>
+          but <em>never heard before</em>.
+        </p>
+        <p class="story-para" style="margin-bottom: 1rem;">
+          Your kindness, your laughter, the way you see the world —<br>
+          it made my ordinary days feel <strong>extraordinary</strong>.
+        </p>
+        <p class="story-para">
+          I didn't know a person could make you feel so <em>seen</em>…<br>
+          until I met you, <strong>Nada</strong>.
+        </p>
+      </div>
+
+      <div class="ornament anim-4">🌸</div>
+
+      <div class="anim-5">
+        <button class="btn-primary" onclick="goToPage(2)">
+          Continue
+          <span>→</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════ -->
+  <!--  PAGE 2 — MEMORY                  -->
+  <!-- ══════════════════════════════════ -->
+  <section id="memory" class="page">
+    <div class="bg-canvas"></div>
+    <div class="floating-hearts"></div>
+
+    <div class="content" style="max-width: 780px;">
+      <p class="eyebrow anim-1">Little things I love about you</p>
+      <h2 class="title-serif anim-2" style="font-size: clamp(2rem, 5vw, 3.5rem); margin-bottom: 0.5rem;">
+        The moments that
+        <span class="title-italic">stayed with me</span>
+      </h2>
+
+      <div class="memory-grid">
+
+        <div class="memory-card">
+          <span class="card-icon">🌟</span>
+          <p class="card-quote">
+            "Your smile makes my day better — every single time."
+            <strong>Your smile</strong>
+          </p>
+        </div>
+
+        <div class="memory-card">
+          <span class="card-icon">💬</span>
+          <p class="card-quote">
+            "Talking with you always feels so special and warm."
+            <strong>Our conversations</strong>
+          </p>
+        </div>
+
+        <div class="memory-card">
+          <span class="card-icon">🌸</span>
+          <p class="card-quote">
+            "The way you laugh lights up everything around you."
+            <strong>Your laughter</strong>
+          </p>
+        </div>
+
+        <div class="memory-card">
+          <span class="card-icon">✨</span>
+          <p class="card-quote">
+            "Your kindness is something I never want to stop seeing."
+            <strong>Your heart</strong>
+          </p>
+        </div>
+
+        <div class="memory-card">
+          <span class="card-icon">🎀</span>
+          <p class="card-quote">
+            "Even small moments with you feel like something worth keeping."
+            <strong>Every little moment</strong>
+          </p>
+        </div>
+
+        <div class="memory-card">
+          <span class="card-icon">💫</span>
+          <p class="card-quote">
+            "Knowing you is one of my favourite things that ever happened."
+            <strong>Getting to know you</strong>
+          </p>
+        </div>
+
+      </div>
+
+      <div style="margin-top: 2rem;" class="anim-5">
+        <button class="btn-primary" onclick="goToPage(3)">
+          There's more I need to say
+          <span>→</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════ -->
+  <!--  PAGE 3 — CONFESSION              -->
+  <!-- ══════════════════════════════════ -->
+  <section id="confession" class="page">
+    <div class="bg-canvas"></div>
+    <div class="floating-hearts"></div>
+
+    <div class="content">
+      <p class="eyebrow anim-1">From my heart to yours</p>
+
+      <p class="confession-pretext anim-2">
+        May I tell you something?
+      </p>
+
+      <h2 class="confession-main">
+        I really
+        <em>like you,</em><br>
+        Nada.
+      </h2>
+
+      <p class="confession-question">
+        Would you give me a chance<br>
+        to be someone special in your life?
+      </p>
+
+      <div class="btn-group">
+        <button class="btn-yes" onclick="goToPage(4)">
+          Yes 💗
+        </button>
+        <button class="btn-no">
+          No
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════ -->
+  <!--  PAGE 4 — ACCEPTED                -->
+  <!-- ══════════════════════════════════ -->
+  <section id="accepted" class="page">
+    <div class="bg-canvas"></div>
+    <div class="floating-hearts"></div>
+
+    <div class="content accepted-content">
+      <span class="big-emoji" data-anim>💗</span>
+
+      <h2 class="accepted-title" data-anim>
+        You just made me
+        <em>the happiest person</em>
+        today.
+      </h2>
+
+      <p class="accepted-msg" data-anim>
+        Thank you for saying yes.<br>
+        I promise to make every moment<br>
+        worth it for you.
+      </p>
+
+      <div class="ornament" data-anim>✦ ✦ ✦</div>
+
+      <p class="signature" data-anim>
+        With all my love, <strong>Rafi</strong> 🌹
+      </p>
+    </div>
+  </section>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
